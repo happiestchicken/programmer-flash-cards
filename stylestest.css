@@ -1,0 +1,13 @@
+:root {
+    --red: #ee5d5a;
+  }
+
+  input[type="checkbox"] {
+    accent-color: var(--red);
+    margin-right: 10px;
+  }
+  
+  input[type="checkbox"]:hover {
+    accent-color: var(--red);
+  }
+ 

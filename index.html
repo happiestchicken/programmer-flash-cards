@@ -1,0 +1,61 @@
+<html lang ="en">
+    <head>
+        <title>Programmer Interview Study</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <meta charset="utf-8">
+        <meta name='viewport' content="width=device-width, initial-scale=1.0">
+    </head>
+    <!-- <body onload="denom(); numer();"> -->
+    <body>
+        <header>
+            <h1 class="title">Programmer Interview Study</h1>
+        </header>
+        <main>
+            <div class="total">
+                <div class="comments-and-counter">
+                    <div class="counter">
+                        <p>Question:</p>
+                        <p id="myNum"><span id="numer"></span>/<span id="denom"></span></p> <!--number goes here-->
+                    </div>
+                    <div class="comments-box">
+                        <textarea class="comments" id="text" name="text" placeholder="Writing down your answers here before revealing will help you learn faster!" style="overflow:hidden; border:solid 0.2em #2f3f56"></textarea>
+                    </div>
+                </div>
+                <div class="main-section">
+                    <!--get question-->
+                    <div class="question">
+                        <button class="button-one buttons" type="randomQuestion" onclick="randomQuestion(); myToggle()">Get Question</button>
+                        <!--question Text Box-->
+                        <textarea name="randomQuestion" id="randomQuestion" class="question-box" type="text" rows="1" cols="55"></textarea>
+                    </div>
+                    <!--Get answer button-->
+                    <div class="answer">
+                        <button class="button-two buttons" type="randomQuestion" onclick="toggleText()">Show/Hide Answer</button>
+                        <!--Answer text box-->
+                        <div id="demo">
+                            <textarea name="randomAnswer" id="randomAnswer" rows="14" cols="55" style="border:solid 0.2em #2f3f56" class="scroll"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay">
+                <div class="overlay-div">
+                    <h4 class="select-page-title">Select the categories that you would like to receive questions from</h4>
+                    <form id="questions-form" autocomplete="off">
+                        <label class="container">
+                            <input id="one" type="checkbox" checked="checked">OOP
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">   
+                            <input id="two" type="checkbox" checked>General
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                    <button type="button" id="start-btn">Start!</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
+
